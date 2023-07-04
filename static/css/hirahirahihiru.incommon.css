@@ -1,0 +1,139 @@
+.p-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: url(../image/kv_pc.jpg) center center no-repeat;
+  background-size: cover;
+  transform: scale(1.1);
+  transform-origin: top left;
+  transition: transform 4.5s cubic-bezier(0.5, 1, 0.89, 1);
+}
+@media screen and (max-width: 899px) {
+  .p-bg {
+    background: url(../image/kv_sp.jpg) top center no-repeat;
+    background-size: cover;
+    transform-origin: center center;
+  }
+}
+.is-openingEnd .p-bg {
+  transform: scale(1);
+}
+.is-skip .p-bg {
+  transform: scale(1);
+}
+
+.p-navs {
+  position: fixed;
+  top: 0;
+  padding: 38px 31px 0;
+  right: 0;
+  opacity: 1;
+  z-index: 1;
+  width: 100%;
+  max-width: none;
+  justify-content: space-between;
+}
+@media screen and (max-width: 899px) {
+  .p-navs {
+    display: none;
+  }
+}
+.p-navs .p-nav {
+  flex-grow: 0;
+}
+.p-navs .p-nav__list-item {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+.p-navs .p-nav__list-item a {
+  filter: drop-shadow(0 0 0.2rem rgb(255, 255, 255));
+}
+.p-navs .p-logo {
+  height: 100%;
+  transform: translateY(-7px);
+  width: 32%;
+  max-width: 295px;
+}
+@media screen and (min-width: 900px) {
+  .p-navs .p-logo {
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+  .p-navs .p-logo:hover {
+    opacity: 0.5;
+  }
+}
+
+.p-fixednavs {
+  opacity: 1;
+  z-index: 1;
+}
+@media screen and (min-width: 900px) {
+  .p-fixednavs {
+    display: none;
+  }
+}
+.p-fixednavs__btnlist {
+  justify-content: space-between;
+  pointer-events: auto;
+}
+.p-fixednavs__btnlist .p-logo {
+  height: 100%;
+  transform: translateY(7px);
+  width: 58%;
+}
+.p-fixednavs .p-nav__btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.c-btn {
+  text-align: center;
+  border: 1px solid #000000;
+  font-size: 14px;
+}
+@media screen and (min-width: 900px) {
+  .c-btn {
+    transition: opacity 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    font-size: 18px;
+  }
+  .c-btn:hover {
+    opacity: 0.4;
+  }
+  .c-btn:hover a::before {
+    right: 4%;
+  }
+}
+.c-btn a {
+  position: relative;
+  display: block;
+  padding: 17px 12%;
+  font-weight: 700;
+}
+@media screen and (min-width: 900px) {
+  .c-btn a {
+    padding: 19px 13% 21px;
+  }
+}
+.c-btn a::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translateY(-50%);
+  background: url(../image/icon_arrow.png) no-repeat center center;
+  background-size: contain;
+  transition: right 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+@media screen and (min-width: 900px) {
+  .c-btn a::before {
+    width: 11px;
+    right: 5.5%;
+    height: 11px;
+  }
+}

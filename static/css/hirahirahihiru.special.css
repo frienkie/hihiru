@@ -1,0 +1,128 @@
+.p-special {
+  background: none;
+  padding: 29% 0 6.6%;
+  box-shadow: none;
+}
+@media screen and (min-width: 900px) {
+  .p-special {
+    padding: 158px 0 1.8%;
+  }
+}
+@media screen and (max-width: 899px) {
+  .p-special__ttl {
+    margin-bottom: 10%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .p-special__container {
+    width: 100%;
+    max-width: none;
+  }
+}
+body.is-load .p-special__container {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+.p-special__info {
+  margin: 0 auto;
+  width: 87%;
+}
+@media screen and (min-width: 900px) {
+  .p-special__info {
+    max-width: 800px;
+  }
+}
+.p-special__info-head {
+  color: #ffffff;
+  padding: 7px 10px 9px;
+  letter-spacing: 3px;
+  font-size: 19px;
+  text-align: center;
+  background-color: #666762;
+}
+@media screen and (min-width: 900px) {
+  .p-special__info-head {
+    letter-spacing: 5px;
+    font-size: 30px;
+    padding: 9px 10px 12px;
+  }
+}
+.p-special__info-content {
+  background-color: #989898;
+}
+.p-special__info-img img {
+  margin: 0 auto;
+  width: 100%;
+}
+.p-special__other {
+  margin-top: min(60px, 5.3%);
+  padding: 34px 20px 40px;
+  position: relative;
+  background: url(../image/bg_1.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media screen and (max-width: 899px) {
+  .p-special__other {
+    margin-top: 11%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .p-special__other {
+    padding: 54px 20px 60px;
+  }
+}
+.p-special__other-ttl {
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 19px;
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 900px) {
+  .p-special__other-ttl {
+    font-size: 27px;
+    margin-bottom: 38px;
+    letter-spacing: 2px;
+  }
+}
+.p-special__other-btnlist {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 900px) {
+  .p-special__other-btnlist {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 880px;
+  }
+}
+@media screen and (max-width: 899px) {
+  .p-special__other-btnlist {
+    display: block;
+  }
+}
+.p-special__other-btnlist-item {
+  width: 45%;
+  margin-right: 5%;
+}
+@media screen and (min-width: 900px) {
+  .p-special__other-btnlist-item {
+    width: 32%;
+    margin-right: 3%;
+  }
+}
+@media screen and (max-width: 899px) {
+  .p-special__other-btnlist-item {
+    width: 224px;
+    margin: 0 auto 15px;
+  }
+}
+.p-special__other-btnlist-item:last-of-type {
+  margin: 0 auto;
+}
+@media screen and (min-width: 900px) {
+  .p-special__other-btnlist-item:last-of-type {
+    margin: 0;
+  }
+}
